@@ -10,29 +10,29 @@ import pageObject.LoginTest;
 public class WebSiteTest {
 	
 	
-	@Test
-	public void cadastroPositivo() {
-		CadastroTest registroPositivo = new CadastroTest();
-		registroPositivo.cadastroPositivo();
-	}
+//	@Test
+//	public void cadastroPositivo() {
+//		CadastroTest registroPositivo = new CadastroTest();
+//		registroPositivo.cadastroPositivo();
+//	}
+//	
+//	@Test 
+//	public void cadastroNegativo() {
+//		CadastroTest registroNegativo = new CadastroTest();
+//		registroNegativo.cadastroNegativo();
+//	}
 	
-	@Test 
-	public void cadastroNegativo() {
-		CadastroTest registroNegativo = new CadastroTest();
-		registroNegativo.cadastroNegativo();
-	}
-	
-	@Test
-	public void loginPositivo() {
-		LoginTest conectPositivo = new LoginTest();
-		conectPositivo.loginPositivo();
-	}
-	
-	@Test
-	public void loginNegativo() {
-		LoginTest conectNegativo = new LoginTest();
-		conectNegativo.loginNegativo();
-	}
+//	@Test
+//	public void loginPositivo() {
+//		LoginTest conectPositivo = new LoginTest();
+//		conectPositivo.loginPositivo();
+//	}
+//	
+//	@Test
+//	public void loginNegativo() {
+//		LoginTest conectNegativo = new LoginTest();
+//		conectNegativo.loginNegativo();
+//	}
 	
 	@Test 
 	public void consultaPorFiltroPositivo() {
@@ -45,17 +45,17 @@ public class WebSiteTest {
 		ConsultaPorFiltroTest filtroNegativo = new ConsultaPorFiltroTest();
 		filtroNegativo.consultaPorFiltroNegativo();
 	}
-	
-	@Test
-	public void consultaTelaPrincipalPositivo() {
-		ConsultaTelaPrincipalTest telaPositivo = new ConsultaTelaPrincipalTest();
-		telaPositivo.consultaTelaPrincipalPositivo();
-	}
-	
-	@Test
-	public void consultaTelaPrincipalNegativo() {
-		ConsultaTelaPrincipalTest telaNegativo = new ConsultaTelaPrincipalTest();
-		telaNegativo.consultaTelaPrincipalNegativo();
-	}
+//	
+//	@Test
+//	public void consultaTelaPrincipalPositivo() {
+//		ConsultaTelaPrincipalTest telaPositivo = new ConsultaTelaPrincipalTest();
+//		telaPositivo.consultaTelaPrincipalPositivo();
+//	}
+//	
+//	@Test
+//	public void consultaTelaPrincipalNegativo() {
+//		ConsultaTelaPrincipalTest telaNegativo = new ConsultaTelaPrincipalTest();
+//		telaNegativo.consultaTelaPrincipalNegativo();
+//	}
 	
 }

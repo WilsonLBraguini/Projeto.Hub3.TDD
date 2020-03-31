@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import junit.framework.Assert;
+
 public class LoginTest {
 	private WebDriver driver;
 	
@@ -30,6 +32,8 @@ public class LoginTest {
 			}
 			
 		loginModal.findElement(By.id("sign_in_btnundefined")).sendKeys(Keys.ENTER);
+		String texto = driver.findElement(By.linkText("Wilson")).getText();
+		Assert.assertEquals("Wilson", texto);
 		//driver.close();
 					
 		}

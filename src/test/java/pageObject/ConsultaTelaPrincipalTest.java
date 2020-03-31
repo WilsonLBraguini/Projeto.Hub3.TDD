@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import junit.framework.Assert;
+
 public class ConsultaTelaPrincipalTest {
 	private WebDriver driver;
 	
@@ -18,6 +20,8 @@ public class ConsultaTelaPrincipalTest {
 		String url = "https://www.advantageonlineshopping.com/#/";
 		driver.get(url);
 		driver.findElement(By.id("tabletsImg")).click();
+		String texto = driver.findElement(By.xpath("/html/body/div[3]/section/article/div[2]/nav/a[2]")).getText();
+		Assert.assertEquals("TABLETS", texto);
 		//driver.close();
 		
 	}

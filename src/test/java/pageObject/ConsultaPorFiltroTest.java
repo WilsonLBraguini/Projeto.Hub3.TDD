@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import junit.framework.Assert;
+
 public class ConsultaPorFiltroTest {
 	private WebDriver driver;
 	
@@ -23,7 +25,8 @@ public class ConsultaPorFiltroTest {
 		WebElement consultaPorFiltro = driver.findElement(By.id("autoComplete"));
 		consultaPorFiltro.sendKeys("LAPTOPS");
 	    consultaPorFiltro.sendKeys(Keys.ENTER);
-	    consultaPorFiltro.findElement(By.xpath("//*[@id=\"search\"]/div/div/img")).click();
+		String texto = driver.findElement(By.xpath("//*[@id=\"mobileSlide\"]/ul/li[1]/div/div/div/span")).getText();
+		Assert.assertEquals("LAPTOPS", texto);
 	    //driver.close();
 	}
 	
@@ -39,8 +42,7 @@ public class ConsultaPorFiltroTest {
 		WebElement consultaPorFiltro = driver.findElement(By.id("autoComplete"));
 	    consultaPorFiltro.sendKeys("BIKE");
 	    consultaPorFiltro.sendKeys(Keys.ENTER);
-	    consultaPorFiltro.findElement(By.xpath("//*[@id=\"search\"]/div/div/img")).click();	
-	    //driver.close();
+	     //driver.close();
 		
 	}
 
